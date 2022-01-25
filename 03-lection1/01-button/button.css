@@ -1,1 +1,108 @@
+/*Обнуление кнопок*/
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    cursor: inherit;
+}
+
+/******************/
+
 /* Стилизация кнопки */
+
+
+.all-components {
+    max-width: 1440px;
+}
+
+.button-component {
+    display: flex;
+}
+
+.button-component__title {
+    flex: 1 0 50%;
+    text-align: center;
+}
+
+.button-component__forms {
+    flex: 0 1 50%;
+    flex-direction: column;
+}
+
+.button-component__item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 66px;
+    margin: 0 15px 15px 0;
+    border-radius: 8px;
+}
+
+.button-component__item_primary_blue {
+    background: var(--blue);
+}
+
+.button-component__item_primary_hover:hover {
+    background: #2342C0;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button-component__item_primary_disabled {
+    opacity: 0.5;
+}
+
+.button-component__item_primary_disabled:disabled {
+    cursor: not-allowed;
+}
+
+.button-component__item_secondary_purple {
+    background: var(--purple);
+}
+
+.button-component__item_secondary_hover:hover {
+    background: #5028C6;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button-component__item_secondary_disabled {
+    opacity: 0.5;
+}
+
+.button-component__item_secondary_disabled:disabled {
+    cursor: not-allowed;
+}
+
+.button-component__item_alternate_simple {
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+    color: #495057;
+}
+
+.button-component__item_alternate_hover:hover {
+    border: 1px solid #212429;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button-component__item_alternate_disabled {
+    opacity: 0.5;
+}
+
+.button-component__item_alternate_disabled:disabled {
+    cursor: not-allowed;
+}
