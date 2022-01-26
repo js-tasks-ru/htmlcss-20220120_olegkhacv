@@ -22,3 +22,26 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+/*Обнуление кнопок*/
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    cursor: inherit;
+}
+
+/******************/

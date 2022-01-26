@@ -1,35 +1,12 @@
-/*Обнуление кнопок*/
-
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-a:hover {
-    text-decoration: none;
-    cursor: inherit;
-}
-
-/******************/
-
+@import "assets/css/main.css";
 /* Стилизация кнопки */
 
+.button-group{
 
-.all-components {
-    max-width: 1440px;
 }
 
 .button-component {
-    display: flex;
+    display: inline-flex;
 }
 
 .button-component__title {
@@ -43,7 +20,7 @@ a:hover {
 }
 
 .button-component__item {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     color: white;
     font-weight: 500;
@@ -61,14 +38,13 @@ a:hover {
 .button-component__item_primary_hover:hover {
     background: #2342C0;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
 }
 
-.button-component__item_primary_disabled {
-    opacity: 0.5;
-}
-
-.button-component__item_primary_disabled:disabled {
+.button-component__item_primary_blue:disabled {
     cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 .button-component__item_secondary_purple {
@@ -80,12 +56,10 @@ a:hover {
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button-component__item_secondary_disabled {
+.button-component__item_secondary_purple:disabled {
     opacity: 0.5;
-}
-
-.button-component__item_secondary_disabled:disabled {
     cursor: not-allowed;
+    pointer-events: none;
 }
 
 .button-component__item_alternate_simple {
@@ -99,10 +73,8 @@ a:hover {
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button-component__item_alternate_disabled {
+.button-component__item_alternate_simple:disabled {
     opacity: 0.5;
-}
-
-.button-component__item_alternate_disabled:disabled {
+    pointer-events: none;
     cursor: not-allowed;
 }
