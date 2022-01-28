@@ -1,25 +1,25 @@
-@import "assets/css/main.css";
 /* Стилизация кнопки */
 
-.button-group{
-
+.button-group {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.button-component {
+.button {
     display: inline-flex;
 }
 
-.button-component__title {
+.button__title {
     flex: 1 0 50%;
     text-align: center;
 }
 
-.button-component__forms {
+.button__forms {
     flex: 0 1 50%;
     flex-direction: column;
 }
 
-.button-component__item {
+.button__item {
     display: inline-flex;
     flex-direction: column;
     color: white;
@@ -31,50 +31,51 @@
     border-radius: 8px;
 }
 
-.button-component__item_primary_blue {
+.button__item_primary {
     background: var(--blue);
 }
 
-.button-component__item_primary_hover:hover {
+.button__item_primary:hover{
     background: #2342C0;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-
 }
 
-.button-component__item_primary_blue:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-    pointer-events: none;
+.button__item_primary:active{
+    transform: scale(0.9);
 }
 
-.button-component__item_secondary_purple {
+.button__item_secondary {
     background: var(--purple);
 }
 
-.button-component__item_secondary_hover:hover {
+.button__item_secondary:hover{
     background: #5028C6;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button-component__item_secondary_purple:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none;
+.button__item_secondary:active{
+    transform: scale(0.9);
 }
 
-.button-component__item_alternate_simple {
+.button__item_alternate {
     border: 1px solid #ACB5BD;
     border-radius: 8px;
     color: #495057;
 }
 
-.button-component__item_alternate_hover:hover {
+.button__item_alternate:active{
+    transform: scale(0.9);
+}
+
+.button__item_alternate:hover{
     border: 1px solid #212429;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button-component__item_alternate_simple:disabled {
+.button__item_disabled:disabled{
     opacity: 0.5;
     pointer-events: none;
     cursor: not-allowed;
 }
+
+
