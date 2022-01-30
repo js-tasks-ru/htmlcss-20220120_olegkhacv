@@ -1,19 +1,5 @@
 /* Стилизация кнопки */
 
-.button {
-    display: inline-flex;
-}
-
-.button__title {
-    flex: 1 0 50%;
-    text-align: center;
-}
-
-.button__forms {
-    flex: 0 1 50%;
-    flex-direction: column;
-}
-
 .button__item {
     display: inline-flex;
     flex-direction: column;
@@ -72,12 +58,3 @@
     pointer-events: none;
     cursor: not-allowed;
 }
-
-/*.button__item_primary:disabled,*/
-/*.button__item_secondary:disabled,*/
-/*.button__item_alternate:disabled{*/
-/*    opacity: 0.5;*/
-/*    pointer-events: none;*/
-/*    cursor: not-allowed;*/
-/*}*/
-
