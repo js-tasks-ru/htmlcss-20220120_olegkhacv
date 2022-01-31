@@ -53,7 +53,7 @@
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button_disabled:disabled{
+.button:disabled{
     opacity: 0.5;
     pointer-events: none;
     cursor: not-allowed;
