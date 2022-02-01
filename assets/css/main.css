@@ -22,19 +22,37 @@
     --secondary: var(--purple);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }
 
 html, body{
+    text-align: center;
     height: 100%;
 }
 
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .main {
-    min-height: 400px;
+    flex-grow: 1;
     background: #F9FAFC;
 }
 
-.page {
+.footer {
+    color: #212429;
+}
 
+.footer__title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1.26;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 1.5;
 }
