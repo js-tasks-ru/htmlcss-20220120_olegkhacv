@@ -27,7 +27,6 @@ body {
 }
 
 html, body{
-    text-align: center;
     height: 100%;
 }
 
@@ -44,6 +43,7 @@ html, body{
 
 .footer {
     color: #212429;
+    text-align: center;
 }
 
 .footer__title {
