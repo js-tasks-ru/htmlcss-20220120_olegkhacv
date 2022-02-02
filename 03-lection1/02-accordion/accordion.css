@@ -1,19 +1,37 @@
 /* Стилизация аккордеона */
 
+details summary::-webkit-details-marker,
+details summary::marker {
+    display: none;
+    content: "";
+}
+
+details summary:after {
+    content: '';
+    border: 7px solid transparent;
+    border-top: 8px solid black;
+    position: absolute;
+    top: 36px;
+    right: 32px;
+}
+
+details[open] summary:after {
+    content: '';
+    border: 7px solid transparent;
+    border-bottom: 8px solid black;
+}
+
 details[open] summary ~ * {
     animation: sweep .5s ease-in-out;
 }
 
 @keyframes sweep {
     0%    {opacity: 0; margin-left: -10px}
-    100%  {opacity: 1; margin-left: 0px}
-}
-
-summary {
-
+    100%  {opacity: 1; margin-left: 0}
 }
 
 .accordion {
+    max-width: 730px;
     padding: 32px;
     background: #FFFFFF;
     border: 1px solid #ACB5BD;
@@ -21,22 +39,13 @@ summary {
     border-radius: 8px;
     font-size: 16px;
     line-height: 1.5;
-}
-
-.accordion:after {
-    content: '';
-    display: block;
-    top: 0;
-    right: 0;
-    width: 16px;
-    height: 8px;
-    background: url("../assets/images/decorations/arrow.svg");
+    position: relative;
 }
 
 .accordion__title {
-    color: #495057;
+    color: #212429;
 }
 
 .accordion__text {
-    color: #212429;
+    color: #495057;
 }
