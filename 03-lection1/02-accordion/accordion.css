@@ -1,12 +1,12 @@
 /* Стилизация аккордеона */
 
-details summary::-webkit-details-marker,
-details summary::marker {
+.accordion .accordion__title::-webkit-details-marker,
+.accordion .accordion__title::marker {
     display: none;
     content: "";
 }
 
-details summary:after {
+.accordion .accordion__title:after {
     content: '';
     border: 7px solid transparent;
     border-top: 8px solid black;
@@ -15,13 +15,13 @@ details summary:after {
     right: 32px;
 }
 
-details[open] summary:after {
+.accordion[open] .accordion__title:after {
     content: '';
     border: 7px solid transparent;
     border-bottom: 8px solid black;
 }
 
-details[open] summary ~ * {
+.accordion[open] .accordion__title ~ * {
     animation: sweep .5s ease-in-out;
 }
 
@@ -33,7 +33,7 @@ details[open] summary ~ * {
 .accordion {
     max-width: 730px;
     padding: 32px;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #ACB5BD;
     box-sizing: border-box;
     border-radius: 8px;

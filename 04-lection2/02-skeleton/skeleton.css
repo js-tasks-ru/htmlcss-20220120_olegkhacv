@@ -18,8 +18,9 @@
 }
 
 .skeleton-circle {
-    background: #DDE2E5;
-    padding: 32px;
+    background: var(--grey-2);
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
 }
 
@@ -32,15 +33,15 @@
 
 .skeleton__line {
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
-    padding: 10px 0;
+    height: 20px;
 }
 
-.skeleton__line_width_172{
-    max-width: 172px;
+.skeleton__line_width_small{
+    max-width: 40%;
 }
 
-.skeleton__line_width_257{
-    max-width: 257px;
+.skeleton__line_width_middle{
+    max-width: 60%;
 }
 
 .skeleton-body {
