@@ -1,10 +1,15 @@
 @import '../fonts/fonts.css';
 
+<<<<<<< HEAD
 @import "../../components/header/header.css";
 @import "../../components/container/container.css";
 @import "../../components/preview/preview.css";
 @import "../../components/card/card.css";
 @import "../../components/footer/footer.css";
+=======
+/*@import "components/header/header.css";*/
+/*@import "components/footer/footer.css";*/
+>>>>>>> master
 
 :root {
     --white: #ffffff;
@@ -39,7 +44,11 @@ html, body{
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 main {
+=======
+.main {
+>>>>>>> master
     flex-grow: 1;
     background: #F9FAFC;
 }
