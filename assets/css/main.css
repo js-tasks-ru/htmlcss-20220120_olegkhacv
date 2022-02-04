@@ -1,5 +1,9 @@
 @import '../fonts/fonts.css';
 
+@import "../../components/header/header.css";
+@import "../../components/container/container.css";
+@import "../../components/footer/footer.css";
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -19,6 +23,37 @@
     --secondary: var(--purple);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+    background: #F9FAFC;
+}
+
+.footer {
+    color: #212429;
+    text-align: center;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1.26;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 1.5;
 }
