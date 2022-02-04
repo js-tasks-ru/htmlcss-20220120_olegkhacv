@@ -2,6 +2,8 @@
 
 @import "../../components/header/header.css";
 @import "../../components/container/container.css";
+@import "../../components/preview/preview.css";
+@import "../../components/card/card.css";
 @import "../../components/footer/footer.css";
 
 :root {
@@ -37,7 +39,7 @@ html, body{
     flex-direction: column;
 }
 
-.main {
+main {
     flex-grow: 1;
     background: #F9FAFC;
 }
