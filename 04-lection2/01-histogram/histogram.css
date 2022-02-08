@@ -4,7 +4,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     max-width: 354px;
-    padding: 16px 24px 24px 26px;
+    padding: 16px 24px 24px;
 }
 
 .histogram__wrapper {
