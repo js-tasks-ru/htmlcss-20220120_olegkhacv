@@ -1,7 +1,7 @@
 .calendar {
     width: 100%;
     max-width: 304px;
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
     padding: 30px 35px;
@@ -38,6 +38,8 @@
     line-height: 1.25;
     text-align: center;
     color: #334D6E;
+    display: grid;
+    align-items: center;
 }
 
 .calendar__item_day {
@@ -51,7 +53,10 @@
 }
 
 .calendar__item_active {
+    background: #4263EB;
+    color: var(--white);
 }
 
 .calendar__item_between-active {
+    background: #A0B1F5;
 }
