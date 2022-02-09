@@ -43,6 +43,7 @@
     color: #4263EB;
     top: 0;
     right: 0;
+    align-self: baseline;
 }
 
 .histogram__body {
@@ -53,7 +54,6 @@
 
 .histogram__item {
     flex-basis: 9px;
-    height: 100%;
     background: #4263EB;
 }
 
