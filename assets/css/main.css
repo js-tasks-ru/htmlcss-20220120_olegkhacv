@@ -33,6 +33,16 @@ html, body{
     height: 100%;
 }
 
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li{
+    list-style-type: none;
+}
+
 .page {
     display: flex;
     flex-direction: column;

@@ -1,25 +1,4 @@
-@import "../../components/container/container.css";
-@import "../../components/preview/preview.css";
-@import "../../components/card/card.css";
-
-html{
-    height: 100%;
-}
-
-body{
-    height: 100%;
-    margin: 0 auto;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-    color: var(--black);
-}
-
-li{
-    list-style-type: none;
-}
+@import "../../assets/css/main.css";
 
 .page {
     height: 100%;
