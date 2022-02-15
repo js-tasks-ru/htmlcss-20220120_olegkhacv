@@ -32,43 +32,6 @@
     justify-content: center;
 }
 
-.header__burger {
-    position: fixed;
-}
-
-@media screen and (max-width: 767px){
-    .header__burger {
-        display: block;
-        position: fixed;
-        width: 30px;
-        height: 20px;
-    }
-    .header__burger span{
-        position: fixed;
-        background-color: black;
-        left: 0;
-        width: 30px;
-        height: 2px;
-        top: 10px;
-    }
-    .header__burger:before,
-    .header__burger:after {
-        content: '';
-        background-color: black;
-        position: fixed;
-        width: 30px;
-        height: 2px;
-        left: 0;
-        top: 16px;
-    }
-    .header__burger:before{
-        top: 4px;
-    }
-    .header__burger:after{
-        bottom: 0;
-    }
-}
-
 .page__main {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -90,59 +53,23 @@
     }
 }
 
-.menu {
-    position: fixed;
-    top: 0;
-    left: 2%;
-}
+/*Реализация компонента внутри карточки*/
 
-@media screen and (max-width: 767px){
-    .menu {
-        display: none;
-    }
-}
+/*.component {*/
+/*    max-width: 1440px;*/
+/*    background: var(--white);*/
+/*    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);*/
+/*    border-radius: 12px;*/
+/*}*/
 
-.menu__title{
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.25rem;
-    line-height: 1.3;
-    color: var(--black);
-}
-
-.menu__list{
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.875rem;
-    line-height: 1.57;
-    color: var(--black);
-}
-
-.menu__item{
-
-}
-
-.menu__item:hover{
-    color: #D84910;
-}
-
-.component {
-    max-width: 1440px;
-    background: var(--white);
-    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-}
-
-.component__title{
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.75rem;
-    line-height: 1.36;
-    color: var(--grey-4);
-}
+/*.component__title{*/
+/*    font-family: Inter, sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*    font-size: 1.75rem;*/
+/*    line-height: 1.36;*/
+/*    color: var(--grey-4);*/
+/*}*/
 
 .page__footer {
     font-family: Inter, sans-serif;
