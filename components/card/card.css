@@ -4,6 +4,14 @@
     border-radius: 12px;
     height: 367px;
     flex: 1 1 350px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 764px){
+    .card {
+        flex: 1 0 164px;
+        height: 210px;
+    }
 }
 
 .card__top {

@@ -5,6 +5,9 @@
 @import "../../components/preview/preview.css";
 @import "../../components/card/card.css";
 @import "../../components/footer/footer.css";
+@import "../../components/burger/burger.css";
+@import "../../components/sidebar-menu/sidebar-menu.css";
+
 
 :root {
     --white: #ffffff;
@@ -33,28 +36,81 @@ html, body{
     height: 100%;
 }
 
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li{
+    list-style-type: none;
+}
+
 .page {
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 1.75rem;
+    padding: 1rem;
 }
 
-main {
-    flex-grow: 1;
-    background: #F9FAFC;
+.page__header {
+    background-color: var(--white);
+
 }
 
-.footer {
-    color: #212429;
+.header {
+    position: relative;
+}
+
+.header__title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+    line-height: 1.36;
+    color: var(--grey-4);
     text-align: center;
 }
 
-.footer__title {
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 1.26;
+.header__logo {
+    display: flex;
+    justify-content: center;
 }
 
-.footer__text {
-    font-size: 16px;
+.page__main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 3.5rem;
+    background: #F9FAFC;
+    padding: 2.25rem 10.3125rem;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .page__main {
+        grid-column-gap: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .page__main {
+        padding: 0;
+    }
+}
+
+.page__footer {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
     line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3.5rem 0 3.5rem 0;
+    opacity: 0.3;
 }
