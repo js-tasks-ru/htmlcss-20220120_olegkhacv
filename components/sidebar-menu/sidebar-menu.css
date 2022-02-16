@@ -1,16 +1,16 @@
-.menu {
+.sidebar-menu {
     position: fixed;
     top: 0;
     left: 2%;
 }
 
 @media screen and (max-width: 767px){
-    .menu {
+    .sidebar-menu {
         display: none;
     }
 }
 
-.menu__title{
+.sidebar-menu__title{
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -19,7 +19,7 @@
     color: var(--black);
 }
 
-.menu__list{
+.sidebar-menu__list{
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -28,10 +28,10 @@
     color: var(--black);
 }
 
-.menu__item{
+.sidebar-menu__item{
 
 }
 
-.menu__item:hover{
+.sidebar-menu__item:hover{
     color: #D84910;
 }
