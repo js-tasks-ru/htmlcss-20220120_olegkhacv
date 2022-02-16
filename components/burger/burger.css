@@ -1,36 +1,14 @@
 .burger {
     position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    display: none;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px) {
     .burger {
         display: block;
-        position: fixed;
-        width: 30px;
-        height: 20px;
-    }
-    .burger span{
-        position: fixed;
-        background-color: black;
-        left: 0;
-        width: 30px;
-        height: 2px;
-        top: 10px;
-    }
-    .burger:before,
-    .burger:after {
-        content: '';
-        background-color: black;
-        position: fixed;
-        width: 30px;
-        height: 2px;
-        left: 0;
-        top: 16px;
-    }
-    .burger:before{
-        top: 4px;
-    }
-    .burger:after{
-        bottom: 0;
     }
 }
