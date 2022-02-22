@@ -1,61 +1,21 @@
-/*.tooltip {*/
-/*    text-align: center;*/
-/*    position: relative;*/
-/*}*/
-
-/*.tooltip__icon {*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.tooltip__icon:hover ~ .tooltip__bubble{*/
-/*    display: inline-flex;*/
-/*}*/
-
-/*.tooltip__bubble {*/
-/*    !*display: inline-flex;*!*/
-/*    padding: 10px;*/
-/*    font-family: Inter, sans-serif;*/
-/*    line-height: 1.5;*/
-/*    color: #DDE2E5;*/
-/*    background: #4263EB;*/
-/*    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);*/
-/*    border-radius: 10px;*/
-/*    position: absolute;*/
-/*    top: calc(100% + 8px);*/
-/*    left: 50%;*/
-/*    transform: translateX(-50%);*/
-/*    display: none;*/
-/*}*/
-
-/*.tooltip__bubble:after{*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    bottom: 100%;*/
-/*    left: 50%;*/
-/*    border: 12px solid transparent;*/
-/*    border-bottom: 8px solid #4263EB;*/
-/*    transform: translateX(-50%);*/
-/*}*/
-
 .tooltip {
-    text-align: center;
-
+    position: relative;
 }
 
 .tooltip__icon {
     cursor: pointer;
-    right: 55%;
-    top: 7%;
+    left: 50px;
+    top: 51px;
     position: absolute;
-    transform: translateX(20%);
+    width: 24px;
+    height: 24px;
 }
 
 .tooltip__icon:hover ~ .tooltip__bubble{
-    display: inline-flex;
+    display: inline-block;
 }
 
 .tooltip__bubble {
-    /*display: inline-flex;*/
     padding: 10px;
     font-family: Inter, sans-serif;
     line-height: 1.5;
@@ -63,10 +23,9 @@
     background: #4263EB;
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 10px;
-    position: relative;
     top: calc(100% + 8px);
     right: 0;
-    transform: translateX(-40%);
+    transform: translateX(7%);
     display: none;
 }
 
